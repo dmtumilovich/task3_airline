@@ -1,0 +1,47 @@
+{
+	"airplanes" : [
+		{
+			"type" : "passenger",
+			"modelName" : "Boeing-737",
+			"cost" : 100,
+			"rangeOfFlight" : 3000,
+			"maxHeight" : 8000,
+			"maxSpeed" : 800,
+			"fuelConsumption" : 100,
+			"passengerCapacity" : 200
+		},
+		
+		{
+			"type" : "passenger",
+			"modelName" : "Boeing-777",
+			"cost" : 250,
+			"rangeOfFlight" : 3500,
+			"maxHeight" : 12000,
+			"maxSpeed" : 800,
+			"fuelConsumption" : 200,
+			"passengerCapacity" : 300
+		},
+
+		{
+			"type" : "passenger",
+			"modelName" : "Boeing-747",
+			"cost" : 150,
+			"rangeOfFlight" : 3000,
+			"maxHeight" : 10000,
+			"maxSpeed" : 800,
+			"fuelConsumption" : 150,
+			"passengerCapacity" : 250
+		}
+
+		{
+			"type" : "cargo",
+			"modelName" : "Airbus Beluga",
+			"cost" : 500,
+			"rangeOfFlight" : 4000,
+			"maxHeight" : 8000,
+			"maxSpeed" : 750,
+			"fuelConsumption" : 300,
+			"carryingCapacity" : 155
+		}
+	]
+}
