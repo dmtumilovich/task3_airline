@@ -1,14 +1,17 @@
 package by.epam.task3.dao;
 
-import by.epam.task3.entity.airline.Airline;
+import by.epam.task3.entity.airplane.Airplane;
+import java.util.List;
 
 public class AirlineDAO {
 
-    private static final String TEST_FILE = "src/res/query.json";
-
     //сменить название
-    public Airline parseAirplanes(String filename) {
-        return null;
+    public List<Airplane> getAirplanesFromJSON(String filename) {
+
+        JsonAirplanesParser airplanesParser = new JsonAirplanesParser(filename);
+        List<Airplane> airplanes = airplanesParser.parseForAirplanes();
+
+        return airplanes;
     }
 
 }

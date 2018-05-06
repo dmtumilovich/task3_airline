@@ -1,5 +1,6 @@
 package by.epam.task3.service;
 
+import by.epam.task3.dao.AirlineDAO;
 import by.epam.task3.entity.airline.Airline;
 import by.epam.task3.entity.airplane.Airplane;
 import by.epam.task3.entity.airplane.CargoAirplane;
@@ -11,6 +12,11 @@ import java.util.Comparator;
 import java.util.List;
 
 public class AirlineService {
+
+    public List<Airplane> getAirplanesFromFile(String filename) {
+        AirlineDAO airlineDAO = new AirlineDAO();
+        return airlineDAO.getAirplanesFromJSON(filename);
+    }
 
     public void sortByRange(Airline airline, Comparator<? super Airplane> comparator) {
         Collections.sort(airline.getAirplanes(), comparator);

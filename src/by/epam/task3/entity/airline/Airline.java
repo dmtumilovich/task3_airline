@@ -25,4 +25,8 @@ public class Airline {
     public void add(Airplane airplane) {
         airplanes.add(airplane);
     }
+
+    public void setAirplanes(List<Airplane> airplanes) {
+        this.airplanes = airplanes;
+    }
 }
